@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    
+    <meta charset="UTF-8">
+    <title>HAFSA</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   </head>
+   <body>
+      <header class="bg-white border-b-2 border-b-gray">
+         <nav class="flex justify-center gap-20 lg:relative ">
+            <div class="flex justify-between items-center gap-x-56">
+               <a href="home.html" class="pr-8">
+                  <img src="logo.png" alt="logo" class="w-20 h-20">
+               </a>
+               <span class="mt-6 text-3xl cursor-pointer md:hidden block mx-20 mr-1">
+                  <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+               </span>
+               </div>
+               <div class="ml-20">
+            <ul class="lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute lg:bg-white gap-8 justify-center lg:mt-6 mt-20 lg:w-auto lg:opacity-100 opacity-0 top-[-1px] transition-all ease-in duration-500">
+               <li class="rounded-full lg:bg-black lg:text-white p-2 px-6 hover:bg-violet-400 hover:text-gray-700 text-lg leading-5 text-left lg:my-0 text-gray-700 "><a href="home.html" id="home">Home</a></li>
+               <li class="text-gray-700 text-lg leading-5 text-left hover:rounded-full p-2 px-6 hover:bg-violet-400 hover:text-gray-700 lg:my-0"><a href="about.html" id="about">About</a></li>
+               <li class="text-gray-700 text-lg leading-5 text-left hover:rounded-full p-2 px-6 hover:bg-violet-400 hover:text-gray-700 lg:my-0"><a href="timeline.html" id="timeline">Timeline</a></li>
+               <li class="text-gray-700 text-lg leading-5 text-left hover:rounded-full p-2 px-6 hover:bg-violet-400 hover:text-gray-700 lg:my-0"><a href="contact.html" id="contact">Contact</a></li>
+               
+            </ul>
+         </div>
+         </nav>
+         <script>
+            function menu(e) {
+               let list = document.querySelector('ul');
+               if (e.name === 'menu') {
+                  e.name = "close";
+                  list.classList.add('top-[20px]');
+                  list.classList.add('opacity-100');
+               } else {
+                  e.name = "menu";
+                  list.classList.remove('top-[20px]');
+                  list.classList.remove('opacity-100');
+               }
+            }
+         </script>
+      </header>
+      <main class=" ">
+        <div class="">
+         <h1 class="text-gray-800 text-3xl mx-52 my-3">Hi, I'm Hafsa! 👋</h1>
+         <h2 class="text-gray-700 text-xl mx-32 my-3 pl-2 ml-52 border-l-2 ">💻 Full-stack Software Developer</h2>
+         <div class="flex gap-x-2 mx-52 my-3 ">
+         <a href="https://github.com/hafsaelkhattabi">
+            <img src="https://img.shields.io/github/followers/availchet?label=follow&amp;style=social" alt="GitHub: @availchet">
+         </a>
+         <a href="https://www.linkedin.com/in/hafsa-elkhattabi-10747b26b">
+            <img alt="Linkedin: @chetanya-kandhari" src="https://img.shields.io/badge/-Chetanya%20Kandhari-blue?style=flat-square&amp;logo=Linkedin&amp;logoColor=white&amp;link=https://www.linkedin.com/in/chetanya-kandhari/">
+         </a>
+         <a href="mailto:hafssakhattabi35@gmail.com">
+            <img src="https://img.shields.io/badge/Gmail-@availchet-red" alt="Gmail: @availchet">
+         </a>
+       </div>
+        </div>
+        <div class="text-gray-600 mx-52">
+         <p>My passion lies in solving challenging problems, designing algorithms, and communicating complex ideas to non-technical stakeholders.</p><br>
+         <p>I always look to exceed expectations and am effective both working as an individual and as part of a team.</p><br>
+         <p>In my spare time, I like to travel 🚶, read books 📚, listen to music 🎧 and watch movies 📺.</p><br>
+         <p class="border-b-2 pb-7">I enjoy learning new things and connecting with people across a range of industries. If you ever want to bounce ideas off of me, please feel free to reach out on twitter or email. 😄</p><br>
+        </div>
+        <div>
+           <h1 class="mx-52 text-3xl">⚡ Technical Skills ⚡</h1>
+           <table class="table-auto border-collapse border border-gray-300 text-left ml-52 mt-5">
+             <tr>
+               <th class="px-4 py-2">Area</th>
+               <th class="px-4 py-2">Proficiencies</th>
+             </tr>
+             <tr class="bg-gray-200">
+               <td class="px-4 py-2">FrontEnd</td>
+               <td class="px-4 py-2">React, Redux, Angular, RxJs, SASS, Webpack</td>
+             </tr>
+             <tr>
+               <td class="px-4 py-2">BackEnd</td>
+               <td class="px-4 py-2">Go, Node.js, Express</td>
+             </tr>
+             <tr class="bg-gray-200">
+               <td class="px-4 py-2">Web technologies</td>
+               <td class="px-4 py-2">HTML5, CSS3,javascript</td>
+             </tr>
+             <tr>
+               <td class="px-4 py-2">Databases</td>
+               <td class="px-4 py-2">MongoDB (Mongoose), MySQL, PostgreSQL, Gremlin</td>
+             </tr>
+             <tr class="bg-gray-200">
+               <td class="px-4 py-2">Misc</td>
+               <td class="px-4 py-2">Git</td>
+             </tr>
+             <tr>
+               <td class="px-4 py-2">Languages</td>
+               <td class="px-4 py-2">C, C++, Java</td>
+             </tr>
+           </table>
+        </div>
+      </main>
+     <footer class="bg-white text-black py-6 ">
+         <div class="container mx-auto text-center space-y-4">
+           <div class="flex justify-center gap-6">
+             <a href="https://www.linkedin.com/in/hafsa-elkhattabi-10747b26b" target="_blank" class="text-black hover:text-violet-400">
+               <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+             </a>
+             <a href="https://github.com/hafsaelkhattabi" target="_blank" class="text-black hover:text-violet-400">
+               <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+             </a>
+             <a href="mailto:hafssakhattabi35@gmail.com" class="text-black hover:text-violet-400">
+               <ion-icon name="mail-open-outline" class="text-2xl"></ion-icon>
+             </a>
+             <a href="CV.pdf" download class="text-black hover:text-violet-400">
+               <ion-icon name="document-outline" class="text-2xl"></ion-icon>
+             </a>
+           </div>
+         </div>
+       </footer>
+
+
+
+
+
+
+   </body>
+   </html>
